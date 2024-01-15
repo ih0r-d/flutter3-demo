@@ -1,6 +1,4 @@
-import 'package:beginner/pages/first_page.dart';
-import 'package:beginner/pages/home.dart';
-import 'package:beginner/pages/settings.dart';
+import 'package:beginner/pages/counter_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,9 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => FirstScreen(),
-        '/home': (context) => const HomeScreen(),
-        '/settings': (context) => const SettingsScreen(),
+        '/': (context) => const CounterScreen(),
       },
     );
   }
