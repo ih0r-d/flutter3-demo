@@ -1,4 +1,4 @@
-import 'package:beginner/pages/todo.dart';
+import 'package:beginner/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,9 +13,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
+      // theme: ThemeData(primarySwatch: Colors.yellow),
+      // theme: ThemeData(
+      //   primarySwatch: Colors.yellow
+      // ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const ToDoScreen(),
+        '/': (context) => const HomeScreen(),
       },
     );
   }
